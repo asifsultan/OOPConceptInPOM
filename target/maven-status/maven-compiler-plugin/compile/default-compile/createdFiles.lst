@@ -1,0 +1,7 @@
+com\mypages\BasePage.class
+com\mypages\Page.class
+com\tests\LoginPageTest.class
+com\mypages\LoginPage.class
+com\tests\BaseTest.class
+com\constants\AppConstants.class
+com\mypages\HomePage.class
