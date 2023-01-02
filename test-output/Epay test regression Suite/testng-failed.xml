@@ -7,22 +7,10 @@
       <class name="com.tests.LoginPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="lofinToWebsite"/>
+          <include name="lofinToWebsite" invocation-numbers="0"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.tests.LoginPageTest -->
     </classes>
   </test> <!-- Epay Login Page test chrome(failed) -->
-  <test thread-count="2" parallel="tests" name="Epay Login Page test firefox(failed)">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="com.tests.LoginPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="lofinToWebsite"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.tests.LoginPageTest -->
-    </classes>
-  </test> <!-- Epay Login Page test firefox(failed) -->
 </suite> <!-- Failed suite [Epay test regression Suite] -->

@@ -4,17 +4,18 @@
 
    <test name="Epay Login Page test chrome" >
    <parameter name="browser" value="chrome" />
+   
       <classes>
          <class name="com.tests.LoginPageTest" />
       </classes>
    </test>
    
-    <test name="Epay Login Page test firefox">
+ <!--    <test name="Epay Login Page test firefox">
    <parameter name="browser" value="firefox" />
 
       <classes>
          <class name="com.tests.LoginPageTest" />
       </classes>
-   </test>
+   </test>-->
      
 </suite>

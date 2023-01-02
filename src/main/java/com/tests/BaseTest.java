@@ -20,7 +20,7 @@ public class BaseTest {
 	public Page page;
 	
 
-	@BeforeMethod
+	@BeforeMethod(groups = { "functest", "checkintest" })
 	@Parameters(value = "browser")
 	public void setup(String browser) {
 		if (browser.equals("chrome")) {
@@ -43,7 +43,7 @@ public class BaseTest {
 
 	}
 
-	@AfterMethod
+	@AfterMethod(groups = { "functest", "checkintest" })
 	public void tearDown() {
 		driver.quit();
 
