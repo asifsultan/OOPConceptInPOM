@@ -1,4 +1,45 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.427 s - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 28.134 s <<< FAILURE! - in TestSuite
+com.tests.LoginPageTest.lofinToWebsite[03224444010, 4264158!, 9999](1)  Time elapsed: 15.193 s  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=108.0.5359.125)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BSS-PC109', ip: '192.168.55.128', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\ASIF~1.SUL\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:51303}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 43ba685aa8b8b040a03eca1ac60db938
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.mypages.LoginPage.performLogin(LoginPage.java:73)
+	at com.tests.LoginPageTest.lofinToWebsite(LoginPageTest.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+

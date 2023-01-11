@@ -12,24 +12,24 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
-     <maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
-<build>
-	<plugins>
-  
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M7</version>
-        <configuration>
-          <suiteXmlFiles>
-            <suiteXmlFile>src\main\resources\testrunner\testng.xml</suiteXmlFile>
-          </suiteXmlFiles>
-        </configuration>
-      </plugin>
-   
-</plugins>
-</build>
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M7</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>src\main\resources\testrunner\testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.apache.maven/maven-plugin-api -->
 		<dependency>
@@ -54,7 +54,7 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>6.9.8</version>
-			 <scope>compile</scope>
+			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
