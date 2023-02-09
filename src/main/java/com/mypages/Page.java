@@ -20,7 +20,7 @@ public abstract class Page {
 	public abstract String getHeader(By locator);
 	public abstract WebElement getElement(By locator);
 	public abstract void waitForElementPresent(By locator);
-	public abstract void waitFotPageTitle(String title);
+	public abstract void waitForPageTitle(String title);
 	
 	public  <TPage extends BasePage> TPage getPageInstance(Class<TPage> pageClass) {
 		

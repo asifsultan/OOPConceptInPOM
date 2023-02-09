@@ -57,7 +57,7 @@ public class BasePage extends Page {
 	}
 
 	@Override
-	public void waitFotPageTitle(String title) {
+	public void waitForPageTitle(String title) {
 		try {
 			wait.until(ExpectedConditions.titleContains(title));
 		}catch(Exception e ) {
@@ -67,26 +67,26 @@ public class BasePage extends Page {
 	}
 		// wrapper methods..
 		public void performClick(By locator) {
-			driver.findElement(locator).click();
+			getElement(locator).click();
 		}
 		public void sendText(By locator, String text) {
-			driver.findElement(locator).sendKeys(text);
+			getElement(locator).sendKeys(text);
 		}
 		public String fetchText(By locator) {
-			return driver.findElement(locator).getText();
+			return getElement(locator).getText();
 		}
 		
 		public void selectFromIndex(By locator, int index) {
-			Select item = new Select(driver.findElement(locator));
+			Select item = new Select(getElement(locator));
 			item.selectByIndex(index);
 		}
 		
 		public void selectFromValues(By locator, String value) {
-			Select item = new Select(driver.findElement(locator));
+			Select item = new Select(getElement(locator));
 			item.selectByValue(value);
 		}
 		public void selectUsingVisibleText(By locator, String text) {
-			Select item = new Select(driver.findElement(locator));
+			Select item = new Select(getElement(locator));
 			item.selectByVisibleText(text);
 		}
 
