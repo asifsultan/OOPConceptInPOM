@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Epay test regression Suite" thread-count="2" parallel="tests">
+<suite name="Epay test regression Suite">
 
 	<test name="Epay Login Page test chrome">
 		<parameter name="browser" value="chrome" />
@@ -11,7 +11,8 @@
 		</groups>
 
 		<classes>
-			<class name="com.tests.LoginPageTest" />
+<!--			<class name="com.tests.LoginPageTest" />-->
+			 <class name="com.tests.GenerateTokenPsidTest" />
 		</classes>
 	</test>
 

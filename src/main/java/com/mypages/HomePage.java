@@ -9,6 +9,8 @@ public class HomePage extends BasePage{
 
 
 	By home = By.xpath("//p[text()='Home']");
+	By excise = By.xpath("//a[@href='#3Submenu']");
+	By tokenTax = By.xpath("//a[@href='/app/tokenTax']");
 	
 	public HomePage(WebDriver driver) {
 		super(driver);
@@ -25,6 +27,15 @@ public class HomePage extends BasePage{
 		return getHome();
 	}
 
+	public GenerateTokenTaxPSID clickOnTokenTax() {
+		
+		getElement(excise).click();
+		getElement(tokenTax).click();
+		
+		return getPageInstance(GenerateTokenTaxPSID.class);
+		
+		
+	}
 
 	
 

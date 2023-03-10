@@ -24,11 +24,13 @@ public class BaseTest {
 	@Parameters(value = "browser")
 	public void setup(String browser) {
 		if (browser.equals("chrome")) {
+			System.out.println("Executing test with chrome browser");
 			WebDriverManager.chromedriver().setup();
-
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
+			
 		} else if (browser.equals("firefox")) {
+			System.out.println("Executing test with firefox browser");
 			WebDriverManager.firefoxdriver().setup();
 
 			driver = new FirefoxDriver();
@@ -43,8 +45,9 @@ public class BaseTest {
 
 	}
 
-	@AfterMethod(groups = { "functest", "checkintest" })
+	@AfterMethod(groups = { "functest" })
 	public void tearDown() {
+		System.out.println("Closing chrome browser");
 		driver.quit();
 
 	}

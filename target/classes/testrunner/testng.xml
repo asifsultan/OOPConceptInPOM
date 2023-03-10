@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Epay test regression Suite"  thread-count="2" parallel="tests">
+<suite name="Epay test regression Suite"  thread-count="1" parallel="tests">
 
    <test name="Epay Login Page test chrome" >
    <parameter name="browser" value="chrome" />
    
       <classes>
          <class name="com.tests.LoginPageTest" />
+        
       </classes>
+       
    </test>
+    <!--<test name="Epay Generate Token tax test">
+		<parameter name="browser" value="chrome" />
+      <classes>
+         <class name="com.tests.GenerateTokePsidTest" />
+      </classes>
+   </test>-->
    
  <!--    <test name="Epay Login Page test firefox">
    <parameter name="browser" value="firefox" />

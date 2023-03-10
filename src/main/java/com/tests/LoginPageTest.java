@@ -24,9 +24,9 @@ public class LoginPageTest extends BaseTest {
 			};
 	}
 	@Test(priority = 2,groups = { "functest", "checkintest" }, dataProvider = "credentials")
-	public void lofinToWebsite(String mobile,String password,String otp) {
-		
-		HomePage homePage = page.getPageInstance(LoginPage.class).performLogin(mobile, password, otp);
+	public void loginToWebsite(String mobile,String password,String otp) {
+		LoginPage lpage = new LoginPage(driver);
+		HomePage homePage = lpage.performLogin(mobile, password, otp);
 		Assert.assertEquals(homePage.getHomePageHeading(),AppConstants.LOGGED_IN_PAGE_TITLE);
 	}
 		

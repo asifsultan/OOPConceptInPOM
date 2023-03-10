@@ -2,10 +2,12 @@
 
 <html>
   <head>
+  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -22,6 +24,7 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
@@ -101,7 +104,7 @@
                     <div class="method-list-content passed suite-Epay_test_regression_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Epay_test_regression_Suite" title="com.tests.LoginPageTest" class="method navigator-link" hash-for-method="lofinToWebsite(03224444010, 4264158!, 9999)">lofinToWebsite(03224444010, 4264158!, 9999)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Epay_test_regression_Suite" title="com.tests.LoginPageTest" class="method navigator-link" hash-for-method="loginToWebsite(03224444010, 4264158!, 9999)">loginToWebsite(03224444010, 4264158!, 9999)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Epay_test_regression_Suite -->
@@ -124,9 +127,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="lofinToWebsite(03224444010, 4264158!, 9999)">
-                  </a> <!-- lofinToWebsite(03224444010, 4264158!, 9999) -->
-                  <span class="method-name">lofinToWebsite</span>
+                  <a name="loginToWebsite(03224444010, 4264158!, 9999)">
+                  </a> <!-- loginToWebsite(03224444010, 4264158!, 9999) -->
+                  <span class="method-name">loginToWebsite</span>
                   <span class="parameters">(03224444010, 4264158!, 9999)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -140,9 +143,9 @@
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Epay test regression Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test name=&quot;Epay Login Page test chrome&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;Epay test regression Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;Epay Login Page test chrome&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.tests.LoginPageTest&quot;/&gt;
@@ -173,7 +176,7 @@
               <span class="test-group-name">checkintest</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">lofinToWebsite</span>
+                <span class="method-in-group-name">loginToWebsite</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -181,7 +184,7 @@
               <span class="test-group-name">functest</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">lofinToWebsite</span>
+                <span class="method-in-group-name">loginToWebsite</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -203,14 +206,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'lofinToWebsite')
+data.setCell(0, 1, 'loginToWebsite')
 data.setCell(0, 2, 'com.tests.LoginPageTest')
-data.setCell(0, 3, 2706);
+data.setCell(0, 3, 1274);
 window.suiteTableData['Epay_test_regression_Suite']= { tableData: data, tableDiv: 'times-div-Epay_test_regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Epay_test_regression_Suite">
               </div> <!-- times-div-Epay_test_regression_Suite -->
             </div> <!-- times-div -->
@@ -249,16 +252,17 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">lofinToWebsite(03224444010, 4264158!, 9999)</span>
-                <span class="method-start">22093 ms</span>
+                <span class="method-name">loginToWebsite(03224444010, 4264158!, 9999)</span>
+                <span class="method-start">9807 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">24800 ms</span>
+                <span class="method-start">11082 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

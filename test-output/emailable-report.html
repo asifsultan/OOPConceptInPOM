@@ -9,10 +9,20 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Epay test regression Suite</th></tr>
-<tr><td><a href="#t0">Epay Login Page test chrome</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">20,866</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Epay Login Page test chrome</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">99,922</td><td>checkintest</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Epay test regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Epay Login Page test chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.tests.LoginPageTest</td><td><a href="#m0">lofinToWebsite</a></td><td rowspan="1">1675917261569</td><td rowspan="1">3689</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Epay test regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Epay Login Page test chrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.tests.GenerateTokenPsidTest</td><td><a href="#m0">clickOnExciseAndTokenTax</a></td><td rowspan="1">1678431064236</td><td rowspan="1">30102</td></tr><tr class="failedeven"><td><a href="#m1">generatePSID</a></td><td rowspan="1">1678431111683</td><td rowspan="1">30091</td></tr><tr><th colspan="4">Epay Login Page test chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.tests.GenerateTokenPsidTest</td><td><a href="#m2">loginToWebsite</a></td><td rowspan="1">1678431052257</td><td rowspan="1">1773</td></tr></tbody>
 </table>
-<h2>Epay Login Page test chrome</h2><h3 id="m0">com.tests.LoginPageTest#lofinToWebsite</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>03224444010</td><td>4264158!</td><td>9999</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Epay Login Page test chrome</h2><h3 id="m0">com.tests.GenerateTokenPsidTest#clickOnExciseAndTokenTax</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;com.mypages.HomePage.getElement(org.openqa.selenium.By)&quot; is null
+	at com.mypages.HomePage.clickOnTokenTax(HomePage.java:32)
+	at com.tests.GenerateTokenPsidTest.clickOnExciseAndTokenTax(GenerateTokenPsidTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.tests.GenerateTokenPsidTest#generatePSID</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>IDS 943</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])&quot; because the return value of &quot;com.mypages.GenerateTokenTaxPSID.getCarNumber()&quot; is null
+	at com.mypages.GenerateTokenTaxPSID.generatePSID(GenerateTokenTaxPSID.java:82)
+	at com.tests.GenerateTokenPsidTest.generatePSID(GenerateTokenPsidTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.tests.GenerateTokenPsidTest#loginToWebsite</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>03224444010</td><td>4264158!</td><td>9999</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

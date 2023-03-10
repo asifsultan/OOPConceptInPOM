@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Epay_test_regression_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Epay test regression Suite</span>
+              <span class="suite-name border-failed">Epay test regression Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Epay_test_regression_Suite" class="navigator-link ">
-                    <span>D:\eclipse-workspace\OOPConceptInPOM\src\main\resources\testrunner\testng.xml</span>
+                    <span>D:\eclipse-workspace\OOPConceptInPOM\src\main\resources\testrunner\testng2.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Epay_test_regression_Suite" class="hide-methods failed suite-Epay_test_regression_Suite"> (hide)</a> <!-- hide-methods failed suite-Epay_test_regression_Suite -->
+                      <a href="#" panel-name="suite-Epay_test_regression_Suite" class="show-methods failed suite-Epay_test_regression_Suite"> (show)</a> <!-- show-methods failed suite-Epay_test_regression_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Epay_test_regression_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Epay_test_regression_Suite" title="com.tests.GenerateTokenPsidTest" class="method navigator-link" hash-for-method="clickOnExciseAndTokenTax">clickOnExciseAndTokenTax</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Epay_test_regression_Suite" title="com.tests.GenerateTokenPsidTest" class="method navigator-link" hash-for-method="generatePSID(IDS 943)">generatePSID(IDS 943)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Epay_test_regression_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +123,7 @@
                     <div class="method-list-content passed suite-Epay_test_regression_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Epay_test_regression_Suite" title="com.tests.LoginPageTest" class="method navigator-link" hash-for-method="lofinToWebsite(03224444010, 4264158!, 9999)">lofinToWebsite(03224444010, 4264158!, 9999)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Epay_test_regression_Suite" title="com.tests.GenerateTokenPsidTest" class="method navigator-link" hash-for-method="loginToWebsite(03224444010, 4264158!, 9999)">loginToWebsite(03224444010, 4264158!, 9999)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Epay_test_regression_Suite -->
@@ -119,17 +138,52 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Epay_test_regression_Suite" class="panel Epay_test_regression_Suite">
-          <div class="suite-Epay_test_regression_Suite-class-passed">
+          <div class="suite-Epay_test_regression_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.tests.LoginPageTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.tests.GenerateTokenPsidTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="lofinToWebsite(03224444010, 4264158!, 9999)">
-                  </a> <!-- lofinToWebsite(03224444010, 4264158!, 9999) -->
-                  <span class="method-name">lofinToWebsite</span>
+                  <a name="clickOnExciseAndTokenTax">
+                  </a> <!-- clickOnExciseAndTokenTax -->
+                  <span class="method-name">clickOnExciseAndTokenTax</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;com.mypages.HomePage.getElement(org.openqa.selenium.By)&quot; is null
+	at com.mypages.HomePage.clickOnTokenTax(HomePage.java:32)
+	at com.tests.GenerateTokenPsidTest.clickOnExciseAndTokenTax(GenerateTokenPsidTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="generatePSID(IDS 943)">
+                  </a> <!-- generatePSID(IDS 943) -->
+                  <span class="method-name">generatePSID</span>
+                  <span class="parameters">(IDS 943)</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])&quot; because the return value of &quot;com.mypages.GenerateTokenTaxPSID.getCarNumber()&quot; is null
+	at com.mypages.GenerateTokenTaxPSID.generatePSID(GenerateTokenTaxPSID.java:82)
+	at com.tests.GenerateTokenPsidTest.generatePSID(GenerateTokenPsidTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Epay_test_regression_Suite-class-failed -->
+          <div class="suite-Epay_test_regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tests.GenerateTokenPsidTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginToWebsite(03224444010, 4264158!, 9999)">
+                  </a> <!-- loginToWebsite(03224444010, 4264158!, 9999) -->
+                  <span class="method-name">loginToWebsite</span>
                   <span class="parameters">(03224444010, 4264158!, 9999)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -138,17 +192,22 @@
         </div> <!-- panel Epay_test_regression_Suite -->
         <div panel-name="test-xml-Epay_test_regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\eclipse-workspace\OOPConceptInPOM\src\main\resources\testrunner\testng.xml</span>
+            <span class="header-content">D:\eclipse-workspace\OOPConceptInPOM\src\main\resources\testrunner\testng2.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Epay test regression Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Epay Login Page test chrome&quot;&gt;
+&lt;suite name=&quot;Epay test regression Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Epay Login Page test chrome&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;checkintest&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.tests.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.tests.GenerateTokenPsidTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Epay Login Page test chrome --&gt;
 &lt;/suite&gt; &lt;!-- Epay test regression Suite --&gt;
@@ -176,7 +235,15 @@
               <span class="test-group-name">checkintest</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">lofinToWebsite</span>
+                <span class="method-in-group-name">clickOnExciseAndTokenTax</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">generatePSID</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginToWebsite</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -184,7 +251,15 @@
               <span class="test-group-name">functest</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">lofinToWebsite</span>
+                <span class="method-in-group-name">clickOnExciseAndTokenTax</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">generatePSID</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginToWebsite</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -204,16 +279,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'lofinToWebsite')
-data.setCell(0, 2, 'com.tests.LoginPageTest')
-data.setCell(0, 3, 3689);
+data.setCell(0, 1, 'clickOnExciseAndTokenTax')
+data.setCell(0, 2, 'com.tests.GenerateTokenPsidTest')
+data.setCell(0, 3, 30102);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'generatePSID')
+data.setCell(1, 2, 'com.tests.GenerateTokenPsidTest')
+data.setCell(1, 3, 30091);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginToWebsite')
+data.setCell(2, 2, 'com.tests.GenerateTokenPsidTest')
+data.setCell(2, 3, 1773);
 window.suiteTableData['Epay_test_regression_Suite']= { tableData: data, tableDiv: 'times-div-Epay_test_regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Epay_test_regression_Suite">
               </div> <!-- times-div-Epay_test_regression_Suite -->
             </div> <!-- times-div -->
@@ -232,7 +315,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.tests.LoginPageTest</span>
+              <span class="ignored-class-name">com.tests.GenerateTokenPsidTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">getLoginPageTitle</span>
                 <br/>
@@ -246,19 +329,35 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.tests.GenerateTokenPsidTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">lofinToWebsite(03224444010, 4264158!, 9999)</span>
-                <span class="method-start">17013 ms</span>
+                <span class="method-name">loginToWebsite(03224444010, 4264158!, 9999)</span>
+                <span class="method-start">10381 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">20704 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">12158 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clickOnExciseAndTokenTax</span>
+                <span class="method-start">22360 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">52464 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">generatePSID(IDS 943)</span>
+                <span class="method-start">69807 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
